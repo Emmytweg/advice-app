@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: #f0f0f0; */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background 0.5s;
+}
+body.morning {
+    background: url('pexels-pixabay-290595.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.afternoon {
+    background: url('pexels-japy-1563604.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.evening {
+    background: url('pexels-pixabay-366283.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.night {
+    background: url('pexels-sanaan-3052361.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, header p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+
+    background: rgba(255, 255, 255, 0.8);    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.advice-box {
+    /* background: #f7f7f7; */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #45a049;
+}
+
+.button:active {
+    animation: shake 0.5s;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
